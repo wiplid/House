@@ -1,0 +1,1086 @@
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/Raleway-Bold.woff2') format('woff2'),
+    url('../fonts/Raleway-Bold.woff') format('woff');
+    font-weight: 600;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url('../fonts/Raleway-Medium.woff2') format('woff2'),
+    url('../fonts/Raleway-Bold.woff') format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1, h2, h3 {
+    font-weight: 400;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    min-width: 1110px;
+    font-family: RalewayMedium, sans-serif;
+    background-color: #F4F6F5;
+    font-weight: 400;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.text {
+    margin: 0;
+}
+/* шапка */
+
+.header {
+    padding: 36px 0;
+    background-color: #E1EDE6;
+    height: 100px;
+}
+
+.header-link {
+    color: #2C2D35;
+    font-size: 18px;
+    line-height: normal;
+}
+
+.header-link:hover {
+    color: #598D66;
+}
+
+.header-link:active {
+    color: #376B44;
+    border-bottom: 1.5px solid #376B44;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.header-logo {
+    width: 143px;
+}
+
+.header-nav {
+    margin-left: 480px;
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 60px;
+}
+
+
+/* home */
+
+.home {
+    margin-bottom: 214px;
+}
+
+.home-back {
+    float: left;
+    width: 540px;
+}
+
+.home-title {
+    padding-top: 145px;
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.ink {
+    color: #598D66;
+}
+
+.home-descr {
+    font-size: 18px;
+    color: #86928B;
+}
+
+.button {
+    border: 1px solid #598D66;
+    padding: 20px 60px 20px 60px;
+    color: #376B44;
+    background-color: white;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #F4F6F5;
+}
+
+.button:hover {
+    background-color: #598D66;
+    color: #F4F6F5;
+}
+
+.button:focus {
+    background-color: #D4E8D9;
+    color: #598D66;
+}
+
+.btn-home {
+    margin-top: 60px;
+}
+
+/* Репродукции карточки */
+
+
+.rep-title {
+    font-size: 40px;
+    color: #2C2D35;
+}
+
+.list-btn {
+    width: 126px;
+    height: 43px;
+    font-size: 18px;
+    background-color: #D4E8D9;
+    color: #2C2D35;
+    border: none;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.list-btn:hover {
+    background-color: #376B44;
+    color: #F4F6F5;
+}
+
+.list-btn:focus {
+    background-color: #598D66;
+    color: #F4F6F5;
+}
+
+.list {
+    list-style: none;
+    margin-left: 360px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.descr-germany,.descr-england {
+    margin-left: 32px;
+}
+
+.blocks_item {
+    display: none;
+}
+
+.blocks_item.france {
+    display: block;
+}
+
+.title-cards {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.reproductions-items {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.reproductions-item {
+    border: 1px solid #E1EDE6;
+    background-color: #E1EDE6;
+    padding: 20px 20px 30px 20px;
+    margin-bottom: 20px;
+    width: 350px;
+}
+
+.reproductions-item-img {
+    width: 310px;
+}
+
+.reproductions-item-descr {
+    font-size: 18px;
+    color: #86928B;
+    margin-top: 20px;
+}
+
+.reproductions-item-title {
+    font-size: 30px;
+    margin-top: 10px;
+    color: #2C2D35;
+}
+
+.reproductions-item-descr-2 {
+    font-size: 18px;
+    color: #2C2D35;
+    margin-top: 8px;
+}
+
+.reproductions-item-cost {
+    font-size: 24px;
+    color: #598D66;
+    margin-top: 30px;
+}
+
+.reproductions-item-btn {
+    background-color: #E1EDE6;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Новая коллекция */
+
+.news {
+    margin-top: 70px;
+    background-image: url(../img/pic_background1.png);
+    height: 574px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.news-title-title {
+    color: #F4F6F5;
+    font-size: 40px;
+    width: 420px;
+    margin-left: 20px;
+}
+
+.news-title {
+    padding-top: 70px;    
+}
+
+.news-descr {
+    width: 540px;
+    color: #ffffff;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.news-btn {
+    color: #2C2D35;
+    background-color: #EEDB6D;
+    border-color: #EEDB6D;
+    margin-top: 60px;
+}
+
+.news-btn:hover {
+    color: #2C2D35;
+    background-color: #FAEB97;
+    border-color: #2C2D35 1px;
+}
+
+.news-btn:focus {
+    background-color: #D9B949;
+    color: #2C2D35;
+}
+
+/* Наша команда */
+
+.team {
+    margin-top: 70px;
+    
+}
+
+.team-img {
+    float: left;
+    margin-right: 30px;
+}
+
+.team-item-title {
+    padding-top: 124px;
+    color: #2C2D35;
+    font-size: 40px;
+}
+
+.team-item-descr {
+    color: #2C2D35;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.team-item-img {
+    margin-top: 20px;
+}
+
+.team-item-img-1 {
+    margin-right: 30px;
+}
+
+/* Подвал */
+
+
+.footer {
+    margin-top: 114px;
+    background-color: #E1EDE6;
+    height: auto;
+    padding: 0;
+}
+
+.footer-content {
+    padding-top: 23px;
+    padding-bottom: 23px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    width: 143px;
+    height: 35px;
+}
+
+.tel {
+    margin-right: 115px;
+    width: 180px;
+}
+
+.descr-tel {
+    font-size: 20px;
+    color: #2C2D35;
+    padding-top: 35px;
+    margin: 0;
+}
+
+.me {
+    display: flex;
+    flex-direction: column;
+}
+
+.mee {
+    flex-direction: column;
+} 
+
+.social-icons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.icon-img {
+    width: 24px;
+    height: 24px;
+}
+
+.ws, .vk {
+    margin-left: 20px;
+}
+
+.footer-title {
+    color: #2C2D35;
+    font-size: 20px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.descr-descr {
+    color: #86928B;
+    font-size: 18px;
+    padding-top: 8px;
+    margin: 0;
+}
+
+.repp, .neww {
+    margin-right: 60px;
+}
+
+.icons-descr {
+    color: #86928B;
+    font-size: 12px;
+    margin: 0;
+    text-align: right;
+}
+
+.idscr {
+    margin-top: 10px;
+}
+
+.text {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+}
+
+.footer-title:hover {
+    color: #598D66;
+}
+
+.footer-title:active {
+    color: #376B44;
+    border-bottom: 1.5px solid #376B44;
+}
+
+
+
+
+
+.burger {
+    display: none;
+    position: relative;
+    z-index: 100;
+    align-items: center;
+    justify-content: flex-start;
+    width: 30px;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+    margin-right: 110px;
+}
+
+.burger span {
+    width: 100%;
+    height: 2px;
+    transform: scale(1);
+    background-color: rgb(0, 0, 0);
+}
+
+.burger::before, .burger::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    transform: all 0.3s ease 0s;
+    background-color: rgb(0, 0, 0);
+}
+
+.burger::before {
+    top: 0;
+}
+
+.burger::after {
+    bottom: 0;
+}
+
+.burger.active span {
+    transform: scale(0);
+}
+
+.burger.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+.open {
+    display: flex !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* 992 */
+
+
+@media (max-width: 992px) {
+
+   body {
+        min-width: 960px;
+   } 
+   
+   .container {
+        padding: 0 20px;
+        width: 960px;
+        margin: 0 auto;
+   }
+
+   .header-nav {
+        margin-left: 330px;
+    }
+
+    .home-back {
+        width: 450px;
+    }
+
+    .home-title {
+        font-size: 50px;
+    }
+
+    .home-descr {
+        width: 450px;
+        margin-left: 400px;
+    }
+
+    .list {
+        margin-left: 260px;
+    }
+
+    .reproductions-item {
+        width: 350px;
+    }
+
+    .reproductions-items {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .icons {
+        margin-left: 37px;
+        display: inline-block;
+    } 
+
+    .team-item-descr {
+        font-size: 16px;
+    }
+
+    .rep-title {
+        font-size: 30px;
+    }
+}
+
+
+/* 768 */
+
+
+@media (max-width: 768px) {
+    
+    body {
+        min-width: 690px;
+    } 
+
+    .container {
+        padding: 0;
+        width: 690px;
+        margin: 0 auto;
+    }
+
+    .header-nav {
+        margin-left: 85px;
+    }
+
+    .home {
+        margin-bottom: 70px;
+    }
+
+    .home-title {
+        padding-top: 35px;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .home-back {
+        width: 330px;
+    }
+
+    .home-descr {
+        width: 330px;
+        margin-left: 300px;
+    }
+
+    .btn-home {
+        margin-top: 40px;
+    }
+
+    .list {
+       margin-left: 10px;
+    }
+
+    .reproductions-item {
+        width: 330px;
+    }
+
+    .reproductions-items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .team-item-descr {
+        font-size: 16px;
+    }
+
+    .rep-title {
+        font-size: 30px;
+    }
+
+    .team-item-title {
+        padding-top:500px;
+        font-size: 30px;
+    }
+
+    .team-item-img {
+        margin-top: 30px;
+    }
+
+    .tel {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .footer-column {
+        padding-top: 40px;
+    }
+
+    .icons {
+        padding-top: 40px;
+    }
+
+    .telefon {
+        padding-left: 527px;
+        padding-top: 0;
+    }
+
+    .footer-logo {
+        float: left;
+    }
+
+    .icons-descr {
+        text-align: left;
+    }
+}
+
+
+/* 576 */
+
+
+@media (max-width: 576px) {
+    
+    body {
+     min-width: 510px;
+     
+    } 
+    
+    .container {
+        padding: 15px 0;
+        width: 510px;
+        margin: 0 auto;
+    }
+
+    .header {
+        padding: 20px 0;
+        box-sizing: border-box;
+    }
+
+    .header-container {
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 0;
+        display: flex;
+    }
+
+    .header-logo img {
+        padding-bottom: 70px;
+        padding-left: 0px;
+        margin-left: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: normal;
+        padding-top: 0;
+    }
+
+    .header-nav {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        border-top: 1px solid #C3D1C6;
+        padding-top: 10px;
+        width: 510px;
+    }
+
+    .header-list {
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-list-item:not(:last-child) {
+        padding-right: 36px;
+    }
+
+    .header-link {
+        color: #333;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .header-basket img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .home-back {
+        width: 195px;
+        padding-top: 50px;
+    }
+    
+    .home-title {
+        font-size: 36px;
+        padding-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .home-descr {
+        font-size: 16px;
+        width: 285px;
+        margin-left: 200px;
+    }
+    
+    .home {
+        margin-bottom: 50px;
+    }
+
+    .list {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .title-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .reproductions-item {
+        width: 240px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+
+    .reproductions-item-descr {
+        font-size: 16px;
+    }
+
+    .reproductions-item-title {
+        font-size: 24px;
+    }
+
+    .reproductions-item-descr-2 {
+        font-size: 16px;
+    }
+
+    .reproductions-item-cost {
+        font-size: 20px;
+    }
+    
+    .news {
+        margin-top: 0px;
+        background-image: url(../img/pic_background3.png);
+        height: 410px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .news-title-title {
+        color: #F4F6F5;
+        font-size: 24px;
+        width: 50%;
+    }
+
+    .news-title {
+        align-items: center;
+        margin-top: 15px;
+        padding-top: 10px;
+    }
+
+    .news-title-img { 
+        width: 50px;
+        height: 50px;
+    }
+
+    .news-descr {
+        width: 540px;
+        font-size: 16px;
+        padding-top: 10px;
+    }
+
+    .news-btn {
+        margin-top: 20px;
+    }
+
+    .team-img {
+        width: 375px;
+    }
+
+    .icons {
+        margin-left: 37px;
+        display: inline-block;
+    } 
+    
+    .team-item-descr {
+        font-size: 16px;
+    }
+    
+    .rep-title {
+        font-size: 30px;
+    }
+    
+    .team-item-title {
+        padding-top:400px;
+        font-size: 30px;
+    }
+    
+    .team-item-img {
+        margin-top: 30px;
+    }
+    
+    .footer {
+        margin-top: 70px;
+    }
+
+    .btn-home {
+        margin-top: 10px;
+        padding: 14px 40px 14px 40px;
+        font-size: 18px;
+    } 
+
+    .tel {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .footer-column {
+        padding-top: 40px;
+        padding-bottom: 16px;
+    }
+
+    .icons {
+        margin: 0;
+        padding-top: 16px;
+        width: 100%;
+        border-top: 1px solid #C3D1C6;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .icons-text {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .idscr {
+        margin-top: 0px;
+        margin-right: 5px;
+    }
+
+    .telefon {
+        padding-left: 347px;
+        padding-top: 0;
+    }
+
+    .footer-logo {
+        float: left;
+    }
+
+    .icons-descr {
+        text-align: left;
+    }
+} 
+
+
+/* 320 */
+
+
+@media (max-width: 320px) {
+
+    body {
+        min-width: 290px;
+        
+    } 
+    
+    .container {
+        padding: 15px 0;
+        width: 290px;
+        margin: 0 auto;
+    }
+
+    .header-container {
+        padding-top: 0px;
+    }
+
+    /*бургер*/
+
+    .burger {
+        display: flex;
+    }
+
+    .header-nav {
+        order: 3;
+        margin: 68px 0 0;
+        display: none;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding:50px 40px;
+        background-color: #E1EDE6;
+        
+    }
+
+    .header-logo img {
+        margin-left: 80px;
+    }
+
+    .header-nav ul {
+        row-gap: 20px;
+        flex-direction: column;
+        padding-left: 101px;
+    }
+
+    .header-nav a {
+        color: #2C2D35;
+    }
+
+    .header-basket {
+        margin-right: 45px;
+    }
+
+    .home-back {
+        display: none;
+    }
+
+    .home-title {
+        font-size: 30px;
+    }
+
+    .home-descr {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    .btn-home {
+        padding: 14px 30px 14px 30px;
+        margin-top: 40px;
+    }
+
+    .rep-title {
+        font-size: 24px;
+        text-align: left;
+    }
+
+    .reproductions-item {
+        width: 290px;
+    }
+
+    .reproductions-item-img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .list-btn {
+        font-size: 16px;
+        width: 100px;
+    }
+
+    .descr-germany, .descr-england {
+        margin-left: 4px;
+    }
+
+    .news {
+        margin-top: 0px;
+        background-image: url(../img/Rectangle.png);
+        height: 552px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .news-title-title {
+        width: 100%;
+    }
+
+    .news-title {
+        align-items: normal;
+        padding-bottom: 10px;
+    }
+
+    .news-descr {
+        width: 290px;
+    }
+
+    .news-btn {
+        width: 100%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 30px;
+    }
+
+    .team-item-title {
+        padding-top: 320px;
+        font-size: 24px;
+    }
+
+    .team-item-img-1:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    .team-item-img-3 {
+        margin-right: 0;
+    }
+
+    .tel {
+        float: left;
+        width: 100%;
+    }
+
+    .telefon {
+        padding-left: 0px;
+        padding-top: 40px;
+        font-size: 16px;
+    }
+
+    .master {
+        padding-top: 8px;
+    }
+
+    .repp {
+        margin-left: 200px;
+        padding-top: 6px;
+        padding-bottom: 0px;
+    }
+
+    .footer-title {
+        font-size: 16px;
+        margin-bottom: 0px;
+    }
+
+    .descr-descr {
+        font-size: 16px;
+        padding-top: 6px;
+    }
+
+    .neww, .onas {
+        padding-top: 20px;
+    }
+}
